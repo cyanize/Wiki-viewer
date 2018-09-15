@@ -1,0 +1,32 @@
+body{
+    background-color: white;
+}
+.btn{
+  font-family: Lato;
+  font-size: 24px;
+   margin: 15px 0px 15px 0px; 
+}
+input {
+  font-family: Lato;
+  font-size: 24px;
+  border-radius: 5px;
+}
+.center {
+  text-align: center;
+}
+.entry {
+  background: lightblue;
+  margin: 15px 0px 15px 0px;
+  padding: 10px;
+  font-family: Lato;
+  font-size: 20px;
+}
+#page {
+  margin-top: 50px;
+}
+#searchButton{    
+    outline: none;
+    border: none;
+    background: none;
+}
+

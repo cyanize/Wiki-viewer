@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>WIKI viewer</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+   <body>
+     <section class="center">
+       <a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-info" target="_blank" role="button">Click here for a random wikipedia article</a>  
+  
+           <!-- Input box and result display -->
+          <div id="search" class="center">
+    <form action="javascript:getQuery()">
+      <input id="query" type="search" />
+      <button id ="searchButton" style="display: inline-flex " onclick="getQuery()"><i class="fa fa-search fa-2x" aria-hidden="true" style="color:#0084b4"></i></button>
+            </form>
+  </div>
+  <div id="page">
+  </div>
+     </section>
+  </body>
+  <footer>
+  </footer>
