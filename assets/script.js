@@ -4,9 +4,7 @@ function getQuery() {
 }
 
 function getData(query) {
-  var url = 'https://en.wikipedia.org/w/api.php?'
-    + 'action=query&list=search&format=json&srprop=snippet'
-    + '&srsearch=' + query + '&callback=?';
+  var url = 'https://en.wikipedia.org/w/api.php?'+'action=query&list=search&format=json&srprop=snippet'+'&srsearch='+query+'&callback=?';
 
   $.ajax({
     url: url,
@@ -30,16 +28,7 @@ function listEntries(data) {
 
 function createEntry(entry) {
   var wikiBase = 'http://wikipedia.org/wiki/';
-  var titleLink = '<a href="'
-                  + wikiBase
-                  + entry.title
-                  + '">'
-                  + entry.title
-                  + '</a>';
-  var html = '<div class="entry"><div><span class="title">'
-              + titleLink
-              + '</span><br><br><span'
-              + entry.snippet
-              + '</span></div></div>';
+  var titleLink = '<a href="'+wikiBase+entry.title+'">'+entry.title+'</a>';
+  var html = '<div class="entry"><div><span class="title">'+titleLink+'</span><br><br><span'+entry.snippet+'</span></div></div>';
   return html;
 }
